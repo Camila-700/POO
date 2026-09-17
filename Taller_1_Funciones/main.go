@@ -28,4 +28,11 @@ func estudiantes() {
 	promedio := averageGrade(total, cantidad)
 
 	fmt.Println("El promedio del curso es:", promedio)
+	
+	if promedio >= 70 {
+		fmt.Println("Curso aprobado")
+	} else {
+		fmt.Println("Curso reprobado")
+	}
+
 
