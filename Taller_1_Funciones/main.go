@@ -6,7 +6,6 @@ func averageGrade(suma float64, cantidad int) float64 {
 	return suma / float64(cantidad)
 }
 
-
 func estudiantes() {
 	var cantidad, nota, total int
 
@@ -28,11 +27,21 @@ func estudiantes() {
 	promedio := averageGrade(total, cantidad)
 
 	fmt.Println("El promedio del curso es:", promedio)
-	
+
 	if promedio >= 70 {
 		fmt.Println("Curso aprobado")
 	} else {
 		fmt.Println("Curso reprobado")
 	}
 
-
+	switch {
+	case promedio >= 90:
+		fmt.Println("Excellent performance")
+	case promedio >= 80:
+		fmt.Println("Good performance")
+	case promedio >= 70:
+		fmt.Println("Satisfactory performance")
+	default:
+		fmt.Println("Needs improvement")
+	}
+}
