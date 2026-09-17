@@ -59,3 +59,13 @@ func sumatoria() {
 
 	fmt.Println("La suma de los numeros del 1 al", n, "es:", total)
 }
+func celsiustoFahrenheit() {
+	var celsius, fahrenheit float64
+
+	fmt.Println("Ingrese la temperatura en Celsius:")
+	fmt.Scan(&celsius)
+
+	fahrenheit = (celsius * 9 / 5) + 32
+
+	fmt.Println("La temperatura en Fahrenheit es:", fahrenheit)
+}
