@@ -2,32 +2,47 @@ package main
 
 import "fmt"
 
+/*
+func <nombre>(param1, param2, ....param n)<valores de retorno>{
+---------------------------
+-------------------------------
+---------------------------------
+
+		//return en el caso de que nuestra funcion retorne valores
+	}
+*/
 func saludar() {
-	fmt.Println("Hola esta es mi primera funcion")
-}
+	fmt.Println("Hola esta es mi primera función")
 
-// Funcion con un parametro
-func nombre(nombre string) {
-	fmt.Println("Bienvenida/a", nombre)
 }
-func main() {
-	var usr string
-	fmt.Println("Ingresa tu nombre:")
-	fmt.Scan(&usr)
-	fmt.Println("Hola bienvenido/a:", usr)
-}
+func Bienvenida(nombre string) {
+	fmt.Println("Bienvenid@", nombre)
 
-// solicite dos numeros y resulva su suma
-func suma(a int, b int) int {
+}
+func suma(a, b int) int {
 	return a + b
 }
-
+func sumaresta(c, d int) (int, int) {
+	return c + d, c - d
+}
 func main() {
 	var usr string
-	fmt.Println("Ingresa tu nombre:")
+
+	fmt.Println("Ingresa tu nombre")
 	fmt.Scan(&usr)
 	saludar()
-	bienvenida(usr)
+	Bienvenida(usr)
 
-	fmt.Println("El resutado de la suma es : ", suma(4, 5))
+	var a, b int
+	fmt.Println("Ingresa dos valores:  ")
+	fmt.Scan(&a, &b)
+	fmt.Println("El resultado de la suma es: ", suma(a, b))
+
+	var c, d int
+	fmt.Println("Ingrese dos valores, para relaizar una suma y resta: ")
+	fmt.Scan(&c, &d)
+
+	w, z := sumaresta(c, d)
+	fmt.Println("El resultado de la suma es: ", w, " y el resultado de la resta es:  ", z)
+
 }
