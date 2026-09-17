@@ -7,7 +7,8 @@ func averageGrade(suma float64, cantidad int) float64 {
 }
 
 func estudiantes() {
-	var cantidad, nota, total int
+	var cantidad, nota int
+	var total float64
 
 	fmt.Println("Ingrese la cantidad de estudiantes:")
 	fmt.Scan(&cantidad)
@@ -22,7 +23,7 @@ func estudiantes() {
 			fmt.Scan(&nota)
 		}
 
-		total += nota
+		total += float64(nota)
 	}
 	promedio := averageGrade(total, cantidad)
 
@@ -44,4 +45,17 @@ func estudiantes() {
 	default:
 		fmt.Println("Needs improvement")
 	}
+}
+
+func sumatoria() {
+	var n, total int
+
+	fmt.Println("Ingrese un numero:")
+	fmt.Scan(&n)
+
+	for i := 1; i <= n; i++ {
+		total += i
+	}
+
+	fmt.Println("La suma de los numeros del 1 al", n, "es:", total)
 }
