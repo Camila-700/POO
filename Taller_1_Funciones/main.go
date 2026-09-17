@@ -10,3 +10,7 @@ func estudiantes() {
 	fmt.Println("Ingrese la cantidad de estudiantes:")
 	fmt.Scan(&cantidad)
 
+	for i := 1; i <= cantidad; i++ {
+		fmt.Println("Ingrese la nota del estudiante", i)
+		fmt.Scan(&nota)
+
