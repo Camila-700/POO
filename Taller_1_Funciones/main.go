@@ -79,3 +79,19 @@ func fahrenheittoCelsius() {
 
 	fmt.Println("La temperatura en Celsius es:", celsius)
 }
+func main() {
+	var opcion string
+
+	for {
+		fmt.Println()
+		fmt.Println("MENU")
+		fmt.Println("1. Promedio de notas estudiantes")
+		fmt.Println("2. Suma de numeros del 1 al n")
+		fmt.Println("3. Convertir Celsius a Fahrenheit")
+		fmt.Println("4. Convertir Fahrenheit a Celsius")
+		fmt.Println("0. Salir")
+		fmt.Println("También puede escribir salir")
+		fmt.Println("Ingrese una opción:")
+		fmt.Scan(&opcion)
+	}
+}
