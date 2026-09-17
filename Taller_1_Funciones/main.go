@@ -69,3 +69,13 @@ func celsiustoFahrenheit() {
 
 	fmt.Println("La temperatura en Fahrenheit es:", fahrenheit)
 }
+func fahrenheittoCelsius() {
+	var fahrenheit, celsius float64
+
+	fmt.Println("Ingrese la temperatura en Fahrenheit:")
+	fmt.Scan(&fahrenheit)
+
+	celsius = (fahrenheit - 32) * 5 / 9
+
+	fmt.Println("La temperatura en Celsius es:", celsius)
+}
