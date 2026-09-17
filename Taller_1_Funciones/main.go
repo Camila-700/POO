@@ -93,5 +93,21 @@ func main() {
 		fmt.Println("También puede escribir salir")
 		fmt.Println("Ingrese una opción:")
 		fmt.Scan(&opcion)
+
+		switch opcion {
+		case "1":
+			estudiantes()
+		case "2":
+			sumatoria()
+		case "3":
+			celsiustoFahrenheit()
+		case "4":
+			fahrenheittoCelsius()
+		case "0", "salir":
+			fmt.Println("Saliendo del programa")
+			return
+		default:
+			fmt.Println("Error: opcion no valida")
+		}
 	}
 }
