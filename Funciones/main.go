@@ -45,4 +45,13 @@ func main() {
 	w, z := sumaresta(c, d)
 	fmt.Println("El resultado de la suma es: ", w, " y el resultado de la resta es:  ", z)
 
+	fmt.Println("El resultado de la sumatoria es: ", sumatoria(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
+
+}
+func sumatoria(numeros ...int) int {
+	total := 0
+	for _, numero := range numeros {
+		total += numero
+	}
+	return total
 }
