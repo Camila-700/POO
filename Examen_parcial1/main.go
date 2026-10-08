@@ -30,6 +30,7 @@ func MostrarEstadisticas() {
 	fmt.Println("\n--- ESTADÍSTICAS ---")
 	fmt.Println("Total recaudado: $", total)
 	fmt.Println("Número de ventas registradas:", len(subtotales))
+	fmt.Println("Listado productos vendidos:")
 }
 
 func main() {
