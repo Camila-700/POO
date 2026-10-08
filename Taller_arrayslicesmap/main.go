@@ -112,7 +112,6 @@ func ejercicio2() {
 			fmt.Println("Actividad no válida. Intente nuevamente.")
 		}
 	}
-
 	fmt.Println("\n------------------------------------")
 	fmt.Println("RESULTADOS DE LA VOTACIÓN")
 	fmt.Println("------------------------------------")
